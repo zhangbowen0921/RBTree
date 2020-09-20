@@ -133,7 +133,7 @@ public class BST<E> extends BinaryTree<E>  {
 			} else {
 				node.parent.right = child;
 			}
-			afterRemove(node);
+			afterRemove(child);
 		} else if (node.parent == null) { // 说明node是叶子节点 也是根节点
 			root = null;
 			afterRemove(node);
