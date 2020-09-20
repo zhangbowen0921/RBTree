@@ -11,10 +11,15 @@ public class Main {
 	public static void main(String[] args) {
 		//test1();
 		//test2();
-		int[] arr = {6, 20, 1, 93, 65, 54, 81, 2, 92, 17, 21, 42, 75, 97, 14, 88, 98};
+		int[] arr = {87, 58, 78, 70, 14, 72, 37, 7, 76, 77, 35, 45, 94, 23, 28};
 		RBTree<Integer> rbt = new RBTree<>();
 		for (int i = 0; i < arr.length; i++) {
 			rbt.add(arr[i]);
+		}
+		BinaryTrees.println(rbt);
+		System.out.println("-------------------------------------");
+		for (int i = 0; i < arr.length; i++) {
+			rbt.remove(arr[i]);
 			System.out.println("【"+arr[i]+"】");
 			BinaryTrees.println(rbt);
 			System.out.println("-------------------------------------");
